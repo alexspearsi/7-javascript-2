@@ -1,12 +1,7 @@
-console.log(elem.getAttribute('About'));
-elem.setAttribute('Test', 123);
-console.log(elem.outerHTML);
+const operations = [100, -20, 7, -20, 50, 0]
 
-for (let attr of elem.attributes) {
-    console.log(`${attr.name} ${attr.value}`);
-}
+let result = operations
+    .filter(item => item > 0)
+    .map(item => item * 60)
 
-
-console.log(elem.attributes
-    
-);
+console.log(result);
