@@ -7,4 +7,4 @@ function check(a = function other() { return 'other'}()) {
     console.log(a);
 }
 
-console.log(check(''));
+console.log(check('')); 
