@@ -7,4 +7,4 @@ function getCoffees() {
                 document.querySelector('div').innerHTML += `<h1>${element.name} = ${element.price}</h1>`
             )
         })
-}
+} 
