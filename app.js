@@ -1,10 +1,10 @@
-function other() {
-    return 'другое';
+function getCoffees() {
+    document.querySelector('div').textContent = '';
+    fetch('./coffees.json')
+        .then(response => response.json())
+        .then(response => {
+            response.forEach(element =>
+                document.querySelector('div').innerHTML += `<h1>${element.name} = ${element.price}</h1>`
+            )
+        })
 }
-
-
-function check(a = function other() { return 'other'}()) {
-    console.log(a);
-}
-
-console.log(check('')); 

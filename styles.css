@@ -2,8 +2,6 @@ body {
     background-color:rgb(216, 195, 195);
 }
 
-* {
-    margin: 0;
-    padding: 0;
-  }
-
+.hello {
+  color: red;
+}
