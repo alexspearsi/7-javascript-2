@@ -1,17 +1,14 @@
 {
   "devDependencies": {
-    "husky": "^9.1.7",
-    "lint-staged": "^15.2.10"
+    "husky": "^9.1.7"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+  "name": "7-javascript-2",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
   },
-  "lint-staged": {
-    "*.js": [
-      "npm run lint:fix",
-      "git add"
-    ]
-  }
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
