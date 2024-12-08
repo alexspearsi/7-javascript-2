@@ -1,12 +1,10 @@
-              const badFormat2 = {
-  firstName: 'John',
-  // the object definition below is all in one line
-lastName: 'Doe',
-  username: 'johndoe',
-  email: 'johndoe@gmail.com',
-phone: '+1 (234) 567-8900',
-age: 32,
-  sex: 'male'
-};
-
-
+function getCoffees() {
+    document.querySelector('div').textContent = '';
+    fetch('./coffees.json')
+        .then(response => response.json())
+        .then(response => {
+            response.forEach(element =>
+                document.querySelector('div').innerHTML += `<h1>${element.name} = ${element.price}</h1>`
+            )
+        })
+} 
